@@ -1,0 +1,93 @@
+Capítulo 12 - Aula 1: Introdução a CSS
+
+Todo e qualquer efeito visual é responsabilidade das CSS.
+
+Vamos começar pela técnica mais básica para aplicar estilos em áreas pontuais em nosso site, que usando as CSS dentro de parâmetros de HTML5 (CSS inline style).
+
+Dentro da tag body adicione o parâmetro style e digite as duas declarações de font-family e color (sempre adicionar parâmetros dentro da tag).
+Ex. tag:	 <body>
+Ex. c/ parâmetro:<body style="font-family: Arial, Helvetica, sansserif; color: blue:">
+
+Ex. tag:	 <h1>
+Ex. c/ parâmetro:<h1 style="color: red;"
+
+
+Capítulo 12 - Aula 2: Estilizando de maneira mais interessante: CSS internal style
+
+Para aplicar estilos de forma mais dinâmica e prática, podemos adicionar uma tag <style> dentro da área <head>.
+Ex.:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Inline</title>
+
+    <style>
+        body {
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: rgb(14, 44, 73);
+            background-color: aquamarine;
+        }
+
+        h2 {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+
+Desvantagens: ocupa muito espaço do seu código, e caso o seu site possua muitas páginas e você deseje alterar o padrão de estilo, será necessário alterar um por um.
+
+Capítulo 12 - Aula 3: A técnica mais versátil: CSS external style
+
+Para manter as folhas de estilo fora do código HTML, utilizamos a tag <link>, que deve ser colocada dentro da área <head> do seu documento HTML.
+Ex.:
+
+<html lang="pt-br"
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<tittle>CSS external</tittle>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+DICA: Ao digitar a palavra link, aparecerão opções. Selecione link:css e a linha será magicamente preenchida.
+
+Agora passe o mouse sobre o nome do arquivo style.css e veja que existe um atalho "Siga o link", bastando pressionar Ctrl+clique. Ao clicar pela primeira vez, o VSCode vai perguntar se você quer que ele crie o arquivo pra você. Aceite e o arquivo será criado automaticamente.
+
+Agora é só adicionar as configurações de estilo desejadas nesse arquivo separado para que elas possam ser aplicadas ao documento que contiver um <link> para ele.
+
+Ex. de código em css:
+
+@charset "UTF-8"; (vai indicar a compatibilidade de codificação com o padrão UTF-8, assim como no arquivo HTML)
+
+body {
+    background-color: rgb(198, 229, 229);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: rgb(32, 95, 77);
+    background-color: rgb(108, 155, 139);
+}
+
+h2 {
+    color: teal;
+}
+
+p {
+    text-align: justify;
+}
+
+
+Para finalizar, segue de forma resumida:
+
+- CSS externo: use sempre que puder
+- CSS interno: use para pequenas configurações
+- CSS inline: procure evitar
