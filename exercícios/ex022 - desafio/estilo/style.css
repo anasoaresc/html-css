@@ -53,6 +53,7 @@ a:hover {
 /*O vh faz com que o seletor utilizado se adeque ao vh da tela, ou seja, reduzindo o tamanho da tela os seletores se adequam.
 Ex: padding-top e bottom abaixo.*/
 /*O line-heigth é o espaçamento entre linhas.*/
+/*o font-size "2.5vw se refere ao tamanho da fonte de acordo com a largura da tela, possibilitando uma melhor responsividade ao site.*/
 
 section {
     padding-top: 10vh;
@@ -72,6 +73,11 @@ section.normal {
     background-color: white;
     color: black;
 }
+
+/*
+o box-shadow inset trás a sensação de sombra de uma folha sobre a imagem, o background-size cover faz com que independente do tamanho da tela a imagem se enquadre e se adapte.
+e por último o background-attachament fixed, trás o famoso efeito parallax. onde as imagens são fixas e o restante da página rola como um feed.
+*/
 
 section.imagem {
     background-color: rgba(0, 0, 0, 0.545);
