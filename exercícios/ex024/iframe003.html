@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vh;
+            height: 3 00px;
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quod asperiores inventore repudiandae totam autem aliquid molestias id ratione eveniet, possimus rem impedit, earum, tenetur illo minima quas quos ullam.</p>
+
+<!--
+    Nas configurações abaixo criamos três links para sites "externos". O diferencial aqui, é conseguirmos visualizar o conteúdo dessas páginas linkadas através do iframe.
+    Basicamente criamos a iframe, adicionamos a tag id apenas para configurações de estilo, e como novidade, a tag "name" utilizando o nome "frame", dessa forma, após configurar os links, basta adicionar a tag target="frame" e ao invés de abrir outra página, exibirá o conteúdo dentro do iframe.
+-->
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="#">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, doloribus earum, blanditiis fugiat mollitia saepe a illo quam sapiente cum voluptate sint porro est corrupti eius sequi. Maxime, officia atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempora dolor, accusamus architecto molestiae quos placeat, rem deleniti ducimus fugit iste nisi autem sunt voluptas. Sunt aut dolores ipsam sed?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum distinctio inventore pariatur nemo voluptate reprehenderit dolor repellendus veritatis saepe ea vero non nesciunt asperiores, molestiae mollitia, nisi maxime consequatur sed.</p>
+
+    <iframe id="tela" name="frame" srcdoc="img src='cursoemvideo.png'">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi earum, amet nostrum omnis corrupti architecto ipsa sunt voluptates nihil neque possimus ullam, vero soluta quae! Ad tempore facilis eos nihil.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo dolores magnam consectetur consequatur nihil minima vel saepe soluta odio deserunt iure voluptas ea fugiat tempore laborum explicabo, veritatis, assumenda quas.
+    </p>
+
+</body>
+</html>
